@@ -1,6 +1,7 @@
 import React from "react";
 import axios from "axios";
 import Joke from "./JokeCC";
+import LoadSpinner from "./LoadSpinnerCC";
 import "./JokeList.css";
 
 class JokeList extends React.Component{
@@ -74,7 +75,7 @@ class JokeList extends React.Component{
       );
     }
   
-    return null;
+    return <LoadSpinner />;
   }
 }
 
